@@ -22,9 +22,8 @@ Welcome to the Spring Data JPA learning project! This repository is dedicated to
 
 Before running the project, ensure that you have the following prerequisites installed:
 
-- Java (version X.X)
-- Spring Boot (version X.X)
-- Other dependencies...
+- Java (version 21)
+- Spring Boot (version 3)
 
 ## Getting Started
 
