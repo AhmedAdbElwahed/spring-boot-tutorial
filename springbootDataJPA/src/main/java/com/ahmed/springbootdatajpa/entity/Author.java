@@ -16,7 +16,15 @@ import java.util.Set;
 public class Author {
 
     @Id
+//    For databases that support auto increment like (MYSQL, Microsoft SQL Server)
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    For databases that support sequence like (oracle database)
+//    @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "author_generator")
+//    @SequenceGenerator(
+//            name = "author_generator",
+//            sequenceName = "author_seq",
+//            initialValue = 100
+//    )
     private Long id;
 
     private String name;

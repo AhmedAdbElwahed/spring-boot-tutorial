@@ -15,6 +15,13 @@ public class Book {
 
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
+//    It creates a table for auto incrementing the primary key
+//    @GeneratedValue(strategy = GenerationType.TABLE, generator = "book_gen")
+//    @TableGenerator(name = "book_gen",
+//            table = "book_seq",
+//            initialValue = 100,
+//            valueColumnName = "next_value"
+//    )
     private Long id;
 
     private String name;
